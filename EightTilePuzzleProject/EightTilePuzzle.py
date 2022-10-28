@@ -115,9 +115,9 @@ def calc_manhattan(node):
 choice = int(input("Enter \"0\" for user determined puzzle, \"1\" for predetermined puzzle -> "))
 if choice == 0:
     # Get user to input tiles in the puzzle
-    frst_row = [int(n) for n in input("Enter first row -> ").split()]
-    scnd_row = [int(n) for n in input("Enter second row -> ").split()]
-    thrd_row = [int(n) for n in input("Enter third row -> ").split()]
+    frst_row = [int(n) for n in input("Enter first row (space delimited) -> ").split()]
+    scnd_row = [int(n) for n in input("Enter second row (space delimited) -> ").split()]
+    thrd_row = [int(n) for n in input("Enter third row (space delimited) -> ").split()]
  
     matrix_ini = frst_row + scnd_row + thrd_row
     print(matrix_ini)
